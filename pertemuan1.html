@@ -6,47 +6,200 @@
     <title>Profil Biodata Mahasiswa</title>
 </head>
 
+<style>
+
+/*1. PENGATURAN DASAR*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #D9E1F1;
+    color: #192338;
+    padding: 40px 20px;
+}
+
+
+/* 2. JUDUL BIODATA*/
+.judul {
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 6px;
+    color: #192338;
+    margin-bottom: 5px;
+}
+
+.subjudul-halaman {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #31487A;
+    margin-bottom: 40px;
+}
+
+
+/*3. PROFIL UTAMA*/
+.profil {
+    background-color: #8FB3E2;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
+    border-left: 7px solid #31487A;
+}
+
+/* Judul bagian */
+.profil .subjudul {
+    font-size: 25px;
+    color: #192338;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #31487A;
+}
+
+/* Isi profil */
+.profil p {
+    display: flex;
+    margin: 18px 0;
+    font-size: 17px;
+}
+
+.label {
+    width: 180px;
+    font-weight: bold;
+    color: #192338;
+}
+
+.profil strong {
+    color: #1E2E4F;
+}
+
+
+/*4. RIWAYAT PENDIDIKAN*/
+
+.pendidikan {
+    background-color: #31487A;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
+    border-left: 7px solid #192338;
+}
+
+.pendidikan .subjudul {
+    font-size: 25px;
+    color: #D9E1F1;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #8FB3E2;
+}
+
+.pendidikan ol {
+    padding-left: 25px;
+}
+
+.pendidikan li {
+    background-color: #D9E1F1;
+    color: #192338;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+/*5. HOBI / MINAT*/
+
+.hobi {
+    background-color: #1E2E4F;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
+    border-left: 7px solid #8FB3E2;
+}
+
+.hobi .subjudul {
+    font-size: 25px;
+    color: #D9E1F1;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #8FB3E2;
+}
+
+.hobi ul {
+    padding-left: 25px;
+}
+
+.hobi li {
+    background-color: #D9E1F1;
+    color: #192338;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+/* 6. EFEK HOVER*/
+
+.pendidikan li:hover,
+.hobi li:hover {
+    background-color: #8FB3E2;
+    transform: translateX(8px);
+}
+
+</style>
+
+
 <body>
 
-    <h1>BIODATA</h1>
+    <h1 class="judul">BIODATA</h1>
+    <p class="subjudul-halaman">PERSONAL PROFILE</p>
 
     <!-- Bagian Profil Utama -->
-    <div>
-        <h2>Profil Utama</h2>
-
+    <div class="profil">
+        <h2 class="subjudul">Profil Utama</h2>
+        
         <p>
-            <span>Nama:</span>
+            <span class="label">Nama:</span>
             <strong>Tasyaul Hidayah</strong>
         </p>
         <p>
-            <span>NIM:</span>
-            <em>E030425074</em> 
+            <span class="label">NIM:</span>
+            <strong> E030425074</strong>
         </p>
         <p>
-            <span>Program Studi:</span>
-            D4 Bisnis Digital
+            <span class="label">Program Studi:</span>
+            <strong>D4 Bisnis Digital</strong>
         </p>
         <p>
-            <span>Kelas:</span>
-            3E
+            <span class="label">Kelas:</span>
+            <strong>3E</strong>
         </p>
     </div>
 
     <!-- Bagian Riwayat Pendidikan -->
-    <div>
-        <h2>Riwayat Pendidikan</h2>
+    <div class="pendidikan">
+        <h2 class="subjudul">Riwayat Pendidikan</h2>
 
         <ol>
             <li>MI Negeri 1 Paser</li>
             <li>MTsN 1 Paser</li>
             <li>SMAN 1 Tanah Grogot</li>
-            <li>D4 Bisnis Digital</li>
+            <li>Politeknik Negeri Banjarmasin</li>
         </ol>
     </div>
 
     <!-- Bagian Hobi atau Minat -->
-    <div>
-        <h2>Hobi/Minat</h2>
+    <div class="hobi">
+        <h2 class="subjudul">Hobi/Minat</h2>
 
         <ul>
             <li>Baca buku</li>
@@ -57,4 +210,4 @@
     </div>
 
 </body>
-</html> 
+</html>
