@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,154 +8,152 @@
 </head>
 
 <style>
+    /*1. PENGATURAN DASAR*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/*1. PENGATURAN DASAR*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Georgia, serif;
-    background-color: #D9E1F1;
-    color: #192338;
-    padding: 40px 20px;
-}
-
-
-/* 2. JUDUL BIODATA*/
-.judul {
-    text-align: center;
-    font-size: 42px;
-    letter-spacing: 6px;
-    color: #192338;
-    margin-bottom: 5px;
-}
-
-.subjudul-halaman {
-    text-align: center;
-    font-size: 13px;
-    letter-spacing: 4px;
-    color: #31487A;
-    margin-bottom: 40px;
-}
+    body {
+        font-family: Georgia, serif;
+        background-color: #D9E1F1;
+        color: #192338;
+        padding: 40px 20px;
+    }
 
 
-/*3. PROFIL UTAMA*/
-.profil {
-    background-color: #8FB3E2;
-    max-width: 850px;
-    margin: 25px auto;
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
-    border-left: 7px solid #31487A;
-}
+    /* 2. JUDUL BIODATA*/
+    .judul {
+        text-align: center;
+        font-size: 42px;
+        letter-spacing: 6px;
+        color: #192338;
+        margin-bottom: 5px;
+    }
 
-/* Judul bagian */
-.profil .subjudul {
-    font-size: 25px;
-    color: #192338;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #31487A;
-}
-
-/* Isi profil */
-.profil p {
-    display: flex;
-    margin: 18px 0;
-    font-size: 17px;
-}
-
-.label {
-    width: 180px;
-    font-weight: bold;
-    color: #192338;
-}
-
-.profil strong {
-    color: #1E2E4F;
-}
+    .subjudul-halaman {
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 4px;
+        color: #31487A;
+        margin-bottom: 40px;
+    }
 
 
-/*4. RIWAYAT PENDIDIKAN*/
+    /*3. PROFIL UTAMA*/
+    .profil {
+        background-color: #8FB3E2;
+        max-width: 850px;
+        margin: 25px auto;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
+        border-left: 7px solid #31487A;
+    }
 
-.pendidikan {
-    background-color: #31487A;
-    max-width: 850px;
-    margin: 25px auto;
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
-    border-left: 7px solid #192338;
-}
+    /* Judul bagian */
+    .profil .subjudul {
+        font-size: 25px;
+        color: #192338;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #31487A;
+    }
 
-.pendidikan .subjudul {
-    font-size: 25px;
-    color: #D9E1F1;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #8FB3E2;
-}
+    /* Isi profil */
+    .profil p {
+        display: flex;
+        margin: 18px 0;
+        font-size: 17px;
+    }
 
-.pendidikan ol {
-    padding-left: 25px;
-}
+    .label {
+        width: 180px;
+        font-weight: bold;
+        color: #192338;
+    }
 
-.pendidikan li {
-    background-color: #D9E1F1;
-    color: #192338;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-
-/*5. HOBI / MINAT*/
-
-.hobi {
-    background-color: #1E2E4F;
-    max-width: 850px;
-    margin: 25px auto;
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
-    border-left: 7px solid #8FB3E2;
-}
-
-.hobi .subjudul {
-    font-size: 25px;
-    color: #D9E1F1;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #8FB3E2;
-}
-
-.hobi ul {
-    padding-left: 25px;
-}
-
-.hobi li {
-    background-color: #D9E1F1;
-    color: #192338;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
-    transition: 0.3s;
-}
+    .profil strong {
+        color: #1E2E4F;
+    }
 
 
-/* 6. EFEK HOVER*/
+    /*4. RIWAYAT PENDIDIKAN*/
 
-.pendidikan li:hover,
-.hobi li:hover {
-    background-color: #8FB3E2;
-    transform: translateX(8px);
-}
+    .pendidikan {
+        background-color: #31487A;
+        max-width: 850px;
+        margin: 25px auto;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
+        border-left: 7px solid #192338;
+    }
 
+    .pendidikan .subjudul {
+        font-size: 25px;
+        color: #D9E1F1;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #8FB3E2;
+    }
+
+    .pendidikan ol {
+        padding-left: 25px;
+    }
+
+    .pendidikan li {
+        background-color: #D9E1F1;
+        color: #192338;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+
+    /*5. HOBI / MINAT*/
+
+    .hobi {
+        background-color: #1E2E4F;
+        max-width: 850px;
+        margin: 25px auto;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(25, 35, 56, 0.15);
+        border-left: 7px solid #8FB3E2;
+    }
+
+    .hobi .subjudul {
+        font-size: 25px;
+        color: #D9E1F1;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #8FB3E2;
+    }
+
+    .hobi ul {
+        padding-left: 25px;
+    }
+
+    .hobi li {
+        background-color: #D9E1F1;
+        color: #192338;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+
+    /* 6. EFEK HOVER*/
+
+    .pendidikan li:hover,
+    .hobi li:hover {
+        background-color: #8FB3E2;
+        transform: translateX(8px);
+    }
 </style>
 
 
@@ -166,7 +165,7 @@ body {
     <!-- Bagian Profil Utama -->
     <div class="profil">
         <h2 class="subjudul">Profil Utama</h2>
-        
+
         <p>
             <span class="label">Nama:</span>
             <strong>Tasyaul Hidayah</strong>
@@ -210,4 +209,5 @@ body {
     </div>
 
 </body>
+
 </html>
